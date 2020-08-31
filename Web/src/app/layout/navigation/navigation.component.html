@@ -1,0 +1,22 @@
+<aside class="sidebar" >
+    <!-- <perfect-scrollbar> -->
+
+        
+        <ul class="navigation" >
+
+            <li  *ngFor="let link of userPages"> 
+                <a  [routerLink]="['/'+link.action]"><i class="{{link.icon}}"></i> {{link.name}}</a>
+                
+                    
+            </li>
+            
+            
+
+        </ul>
+        
+    <!-- </perfect-scrollbar> -->
+</aside>
+
+<!--MODAL Cambiar contraseña-->
+
+    

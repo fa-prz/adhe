@@ -1,0 +1,17 @@
+@import "./assets/css/variables.scss";
+
+header{
+    background-color: $primary !important;
+    a{
+        color: $white !important;
+    }
+}
+
+.primary-background{
+    background-color: $primary;
+    color: $white !important;
+}
+.secondary-background{
+    background-color: $secondary;
+    color: $white !important;
+}

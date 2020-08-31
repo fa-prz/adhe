@@ -1,0 +1,25 @@
+li{
+	list-style:none
+}
+.card{
+	border-radius: 5px;
+	background-color: #5499C7;
+	color:white;
+  padding: 2vh 2vw 2vh 2vw;
+
+  &:hover,
+    &:focus {
+      cursor: pointer;
+      transform: scale(1.02, 1.02);
+    }
+}
+.card-title {
+  font-size: 1.7em !important;
+  border-bottom: 1px solid white; 
+  
+}
+a {
+    text-decoration: none ;
+
+}
+
