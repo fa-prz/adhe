@@ -1,21 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
-
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+	selector: 'app-dashboard',
+	templateUrl: './dashboard.component.html',
+	styleUrls: ['./dashboard.component.scss'],
+	encapsulation: ViewEncapsulation.None
 })
 export class DashboardComponent implements OnInit {
-
-	Algorithm_Pages: any =[
-    ];
-
-	constructor( 
-		private router: Router, 
-		) { }
-
+	constructor(
+		private router: Router,
+	) { }
 	ngOnInit() {
 	}
-	
+
 }

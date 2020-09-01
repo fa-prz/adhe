@@ -1,5 +1,4 @@
 @import "../../../assets/css/variables.scss";
-$gradient: linear-gradient(to bottom right, $secondary, $success,$info);;
 .login_background{
   background-image:$gradient;
   position: absolute;

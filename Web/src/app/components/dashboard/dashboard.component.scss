@@ -1,25 +1,24 @@
-li{
-	list-style:none
-}
-.card{
-	border-radius: 5px;
-	background-color: #5499C7;
-	color:white;
-  padding: 2vh 2vw 2vh 2vw;
+@import "../../../assets/css/variables.scss";
 
-  &:hover,
-    &:focus {
-      cursor: pointer;
-      transform: scale(1.02, 1.02);
-    }
-}
-.card-title {
-  font-size: 1.7em !important;
-  border-bottom: 1px solid white; 
-  
-}
-a {
-    text-decoration: none ;
-
+/* Styles for tab labels */
+.mat-tab-label {
+  min-width: 25px !important;
+  padding: 5px;
+  background-color: transparent;
+  color:$accent;
+  font-weight: 700;
 }
 
+/* Styles for the active tab label */
+.mat-tab-label.mat-tab-label-active {
+  min-width: 25px !important;
+  padding: 5px;
+  background-color: transparent;
+  color:$accent;
+  font-weight: 700;
+}
+
+/* Styles for the ink bar */
+.mat-ink-bar {
+  background-color: $primary !important;
+}
