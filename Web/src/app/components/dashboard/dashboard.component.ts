@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 	encapsulation: ViewEncapsulation.None
 })
 export class DashboardComponent implements OnInit {
+	tab="students";
 	constructor(
 		private router: Router,
 	) { }

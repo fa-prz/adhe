@@ -1,7 +1,14 @@
-<section class="content">
-    <div class="tabs">
-        <mat-tab-group mat-align-tabs="center">
-            <mat-tab label="Alumnos"><app-students></app-students></mat-tab>
-        </mat-tab-group>
-    </div>
+<section class="content project-tab">
+    <ng-container>
+        <ul class="nav nav-tabs  justify-content-center">
+            <li class="nav-item pointer"> <a class="nav-link active" id="tab-pending" [class.active]="tab == 'students'"
+                    (click)="tab = 'students'">Estudiantes</a>
+            </li>
+            <li class="nav-item pointer"> <a class="nav-link" id="tab-paid"
+                [class.active]="tab == 'invoice'" (click)="tab = 'invoice'"  >Ordenes de pago</a> </li>
+        </ul>
+    </ng-container>
+    <ng-container *ngIf="tab == 'students'">
+        <app-students></app-students>
+    </ng-container>
 </section>

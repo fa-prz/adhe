@@ -12,8 +12,7 @@ import { NgForm } from '@angular/forms';
 export class LoginComponent implements OnInit {
 
   constructor(
-    private router: Router,
-    private api: ApiService) {
+    private router: Router) {
   }
 
   ngOnInit() {

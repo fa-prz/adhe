@@ -5,7 +5,12 @@ const LAYOUT_ROUTES: Routes = [
     {
         path: '', component: LayoutComponent,
         children: [
-            { path: '', loadChildren: '../components/dashboard/dashboard.module#DashboardModule', pathMatch: 'full' },
+          { path: '', redirectTo: 'inicio', pathMatch: 'full' },
+          { path: 'inicio', children:[
+            {path:'',loadChildren: () => import('../components/dashboard/dashboard.module').then(m => m.DashboardModule)},
+            { path: 'estudiantes', loadChildren: () => import('../components/students/profile/profile.module').then(m => m.ProfileModule)},
+          ]},
+          { path: '***',redirectTo:'inicio'},
         ]
     }
 ];
