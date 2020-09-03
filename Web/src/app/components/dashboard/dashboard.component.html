@@ -4,11 +4,14 @@
             <li class="nav-item pointer"> <a class="nav-link active" id="tab-pending" [class.active]="tab == 'students'"
                     (click)="tab = 'students'">Estudiantes</a>
             </li>
-            <li class="nav-item pointer"> <a class="nav-link" id="tab-paid"
-                [class.active]="tab == 'invoice'" (click)="tab = 'invoice'"  >Ordenes de pago</a> </li>
+                <li class="nav-item"> <a class="nav-link" id="tab-paid"
+                    [class.active]="tab == 'appointments'" (click)="tab = 'appointments'">Citas</a> </li>
         </ul>
     </ng-container>
     <ng-container *ngIf="tab == 'students'">
         <app-students></app-students>
+    </ng-container>
+    <ng-container *ngIf="tab == 'appointments'">
+        <app-appointments></app-appointments>
     </ng-container>
 </section>

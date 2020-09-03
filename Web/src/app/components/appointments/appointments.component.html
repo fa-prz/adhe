@@ -1,0 +1,32 @@
+<section class="mt-4 ml-3">
+  <div class="row m-4">
+    <ng-container class="col-12 col-sm-6 col-md-3" *ngFor="let appointment of appointments">
+      <div class="card m-4 pointer" (click)="seeProfile=true">
+        <div class="card-header">
+          {{appointment.date}}
+        </div>
+        <img class="card-img-top" src="{{appointment.student.photo}}" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">
+            <span class="text-muted">Registro:</span>
+            {{appointment.student.id}}
+          </p>
+          <p class="card-text">
+            <span class="text-muted">Nombre:</span>
+            {{appointment.student.name}}
+          </p>
+          <p class="card-text">
+            <span class="text-muted">Área:</span>
+            {{appointment.location}}
+          </p>
+        </div>
+            <p class="card-text card-footer">
+              <span class="text-muted">Notas:</span>
+              {{appointment.notes}}
+              <i *ngIf="!appointment.notes">Sin notas registradas</i>
+            </p>
+      </div>
+    </ng-container>
+  </div>
+
+</section>

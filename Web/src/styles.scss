@@ -8,6 +8,10 @@ header{
     }
 }
 
+.full-column {
+    width: 100%;
+}
+
 .primary-background{
     background-color: $primary;
     color: $white !important;

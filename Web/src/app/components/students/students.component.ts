@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./students.component.scss']
 })
 export class StudentsComponent implements OnInit {
+  seeProfile = false;
   students = [
     { name: "Claudita Alvarez Ruiz", "photo": "../../../assets/people/photos/0.jpg", id: "2031890", major: "Ingeniería en Desarrollo de Software" },
     { name: "Cordaro Vargas Martinez", "photo": "../../../assets/people/photos/1.jpg", id: "2031891", major: "Ingeniería en Desarrollo de Software" },
