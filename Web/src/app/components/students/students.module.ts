@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { StudentsComponent } from './students.component';
 import { ProfileModule } from './profile/profile.module';
+import { DatesComponent } from './dates/dates.component';
 
 @NgModule({
   imports: [
@@ -12,7 +13,7 @@ import { ProfileModule } from './profile/profile.module';
     FormsModule,
     ProfileModule
   ],
-  declarations: [ StudentsComponent],
+  declarations: [ StudentsComponent, DatesComponent],
   exports: [ StudentsComponent ]
 })
 export class StudentsModule { }
